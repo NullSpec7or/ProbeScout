@@ -53,7 +53,7 @@ Basic usage:
 Example:
 
 ```bash
-./full_test.sh https://ops.testtoucanpay.in
+./full_test.sh https://domain.org
 ```
 
 ### Notes
