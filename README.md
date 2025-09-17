@@ -32,12 +32,12 @@ It automates the discovery of exposed actuator routes, collects JSON responses (
 2. Make it executable:
 
    ```bash
-   chmod +x full_test.sh
+   chmod +x probescout.sh
    ```
 3. If copied from Windows, fix line endings:
 
    ```bash
-   dos2unix full_test.sh
+   dos2unix probescout.sh
    ```
 
 ---
@@ -47,13 +47,13 @@ It automates the discovery of exposed actuator routes, collects JSON responses (
 Basic usage:
 
 ```bash
-./full_test.sh BASE_URL
+./probescout.sh BASE_URL
 ```
 
 Example:
 
 ```bash
-./full_test.sh https://domain.org
+./probescout.sh https://domain.org
 ```
 
 ### Notes
@@ -62,7 +62,7 @@ Example:
   If you encounter `Syntax error: '(' unexpected`, explicitly run:
 
   ```bash
-  bash ./full_test.sh BASE_URL
+  bash ./probescout.sh BASE_URL
   ```
 * Output includes:
 
@@ -98,18 +98,18 @@ Each saved JSON file also has a sibling `.content-type` file with the original r
   * **Fix:** Run explicitly with bash:
 
     ```bash
-    bash ./full_test.sh BASE_URL
+    bash ./probescout.sh BASE_URL
     ```
   * Also check for Windows line endings:
 
     ```bash
-    file full_test.sh
-    dos2unix full_test.sh
+    file probescout.sh
+    dos2unix probescout.sh
     ```
 
 * **Permission denied**
 
-  * Run `chmod +x full_test.sh` or execute with bash.
+  * Run `chmod +x probescout.sh` or execute with bash.
 
 * **Curl timeouts**
 
